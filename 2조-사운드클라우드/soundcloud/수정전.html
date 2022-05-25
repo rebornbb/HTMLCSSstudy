@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundcloud</title>
+<style>
+    body {
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg1 {
+        
+    width: 1240px;
+    height: 450px;
+border-top: solid 5px #FF5500 ;
+background-image: url(../img/main01.jpg);
+background-repeat: no-repeat;
+background-position: 0% 0px;
+padding-bottom: 50px;
+
+ box-shadow:inset 0px 50px 15px -10px rgba(0,0,0,0.4)
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 4px 16px;
+    margin: 0 0 0 10px;
+    display:inline-block;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+#small_b{
+    font-size: 14px;
+}
+.btn.black {
+    background-color: black;
+    border: solid white 1px;
+}
+.btn.orange {
+    background-color: #FF5500;
+    border: solid transparent 0px;
+}
+.btn:active {
+    background-color: blueviolet;
+}
+.toprignt a:last-child {
+    margin-right: 25px;
+}
+.bg1 img {
+    position: relative;
+    height: 24px;
+    top: 30px;
+    left: 40px;
+    display: inline-block;
+}
+.toprignt {
+    display: flex;
+    justify-content: flex-end;
+}
+.h1 {
+    font-family : 'HYGothic medium';
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 20px; 
+    font-weight: 100px;
+}
+.title_p {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+#big_b {
+    margin-top: 35px;
+    font: 18px;
+    text-align: center;
+    width: 187px;
+    height: 37px;
+    line-height: 35px;
+}
+nav {
+    background-color: white;
+    width: 1240px;
+    height: 900px;
+    margin-top: -40px;
+    margin-bottom: -150px;
+}
+#search-icon{
+    background-image: url(../img/돋보기.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width:600px;
+    height: 35px;
+}
+form {
+padding-left: 15%;
+padding-bottom: 50px;
+}
+input[type='text'] {
+background: #f2f2f2;
+width: 600px;
+height: 35px;
+border-radius: 5px;
+border: solid #f2f2f2 5px;
+padding-left: 20px;
+margin-right: 15px;
+}
+::placeholder {
+  color: grey;
+  font-size: 14px;
+  font-family: 굴림;
+}
+.nav-center{
+font-size: 24px;
+display: block;
+text-align: center;
+padding-bottom: 30px;
+}
+
+
+#album01 {
+    background-image: url(../img/album01.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+#album01:hover {
+    background-image: url(../img/album01.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+#playbutton {
+    margin: 50px;
+    display: relative;
+    background-image: url(../img/playbutton.png);
+    border: none;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#playbutton:hover {
+    margin: 50px;
+    display: inline-block;
+    background-image: url(../img/playbutton-red.png);
+    border: none;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+li:hover {
+    width : 5px
+    transition transform 1s;
+    box-shadow : inset 0px -50px 50px -30px rgba(0,0,0,0.51)
+}
+#album02 {
+    background-image: url(../img/album02.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album03 {
+    background-image: url(../img/album03.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album04 {
+    background-image: url(../img/album04.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album05 {
+    background-image: url(../img/album05.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album06 {
+    background-image: url(../img/album06.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album07 {
+    background-image: url(../img/album07.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album08 {
+    background-image: url(../img/album08.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album09 {
+    background-image: url(../img/album09.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album10 {
+    background-image: url(../img/album10.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album11 {
+    background-image: url(../img/album11.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#album12 {
+    background-image: url(../img/album12.jpg);
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ul {
+list-style: none;
+display: flex;
+flex-direction: row;
+}
+li {
+    margin-right: 15px;
+    list-style: none;
+}
+
+.SectionA {
+    width: 1240px;
+    height: 460px;
+    background-color: #f2f2f2;
+}
+.A-S1 {
+    width: 730px;
+    height: 460px;
+    background-image: url(../img/phone.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.as1 {
+font-size: 36px;
+font-weight: 500;
+display: inline-block;
+position: relative;
+left: 830px;
+top: 110px;
+}
+.align-c {
+position: absolute;
+left: 41%;
+}
+#gra_line {
+    width: 70px;
+    height: 3px;
+    background-image: linear-gradient(90deg,#7d01a1,#f30 50%,#f50);
+    margin-top: 140px;
+    position: relative;
+    right: -505px;
+}
+#gra_line ~ p {
+    font-size: 24px;
+    margin-top: 90px;
+    position: relative;
+    left: 835px;
+    margin-top: 25px;
+}
+.btn.imgb1 {
+    width: 120px;
+    height: 40px;
+    background-image: url(../img/appstore.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 820px;
+}
+.btn.imgb2 {
+    width: 120px;
+    height: 40px;
+    background-image: url(../img/googleplay.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 810px;
+    top:2px;
+}
+.SectionB {
+    width: 1240px;
+    height: 460px;
+    background-image: url(../img/main02.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bs1 {
+    color: #fff;
+font-size: 24px;
+font-weight: 500;
+display: inline-block;
+position: relative;
+left: 70px;
+top: 70px;
+}
+.bs1 ~ p {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    left: 70px;
+    top: 70px;
+}
+#find_btn {
+    margin-top: 80px;
+    font: 18px;
+    text-align: center;
+    width: 160px;
+    height: 37px;
+    line-height: 35px; 
+    position: relative;
+    left: 60px;
+}
+#white_btn {
+    background-color: fff;
+    border: solid lightgray 1px;
+    color: black;
+    position: relative;
+    top: -55px;
+    left: 375px;
+}
+.SectionC {
+    width: 1240px;
+    height: 450px;
+}
+.cs1 {
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+
+    margin-bottom: 20px; 
+    font-weight: 100px;
+}
+.cs1 ~ p {
+    text-align: center;
+    position: relative;
+    color: black;
+    font-size: 24px;
+}
+#creat_b {
+    font: 18px;
+    text-align: center;
+    width: 187px;
+    height: 37px;
+    line-height: 35px;
+    margin-left: 200px;
+}
+#small_p {
+    color: grey;
+    font-size: 15px;
+    padding: 15px;
+    position: relative;
+    left: -50px;
+}
+footer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+footer div a {
+font-size: 14px;
+color : grey;
+text-decoration: none;
+}
+/* .languageselect > button {
+    padding: 0px;
+    font-size: 14px;
+    border: transparent;
+    margin-top: 20px;
+color : black;
+} */
+#languageblue {
+
+    color: blue;
+}
+.container-audio{
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    padding: 2px;
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+width: 48px;
+height: 48px;
+margin: 0px;
+padding: 0px;
+border: none;
+}
+.icon.back {
+    background-image: url(../img/backicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon.play {
+    background-image: url(../img/playicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon.front {
+    background-image: url(../img/fronticon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon.shuffle { 
+    background-image: url(../img/shuffleicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon.rotate {
+    background-image: url(../img/rotateicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+audio{
+    width: 700px;
+}
+
+.icon.like {
+    background-image: url(../img/likeicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon.plus { 
+    background-image: url(../img/plusicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon.list {
+    background-image: url(../img/listicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#small-icon button {
+        width: 30px;
+        height: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="bg1">
+    <img src="../img/simbollogo.svg" alt="SoundCloud" >
+    <img src="../img/wordlogo.png" alt="SoundCloud" >
+    
+    <div class="toprignt">
+    <a class="btn black" id="small_b" href="login.html"> Sign in </a>
+    <a class="btn orange"  id="small_b" href="login.html"> Created account </a>
+    <a class="btn trans" id="small_b"  href="https://community.soundcloud.com/"> For Creators </a>
+    </div>
+
+    <h1 class="h1">Connect on SoundCloud</h1>
+    <div class="title_p">
+    <span>Discover, stream, and share a constantly expanding mix of music</br>
+    from emerging and major artists around the world.</span>
+    <br>
+    <a id="big_b" class="btn orange" href="login.html"> Sign up for free</a>
+    </div>
+</div>
+</header>
+
+<nav>
+<form action="https://soundcloud.com/search" method="get">
+<input type="text"  name="searchmusic"  
+id=search-icon placeholder="Search for artists, hands, tracks, podcasts">
+ <span> or </span>     
+ <a class="btn orange" id="big_b" class="align-c" href="login.html"> Upload your own </a>
+</form>
+<div class="nav-center"> Hear what’s trending for free in the SoundCloud community </div>
+
+<ul>
+    <li id="album01"> <button id="playbutton" onclick="location.href='#'"></button> 
+
+    <li id="album02"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+    <li id="album03"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+    <li id="album04"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+    <li id="album05"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+    <li id="album06"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+</ul>
+<ul>
+    <li id="album07"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+    <li id="album08"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+    <li id="album09"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+    <li id="album10"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+    <li id="album11"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+    <li id="album12"> <button id="playbutton" onclick="location.href='#'"></button> </li>
+</ul>
+
+<div class="align-c">
+<a class="btn orange" id="big_b" href="https://soundcloud.com/discover">Explore trending playlists</a>
+</div>
+</nav>
+
+<section class="SectionA">
+<div class="A-S1">
+<span class="as1"> Never stop listening </span>
+<hr id="gra_line">
+<p>SoundCloud is available on <br>
+Web, iOS, Android, Sonos,<br>
+Chromecast, and Xbox One.</p>
+<a class="btn imgb1" href="https://apps.apple.com/us/app/soundcloud/id336353151"></a>
+<a class="btn imgb2" href="https://play.google.com/store/apps/details?id=com.soundcloud.android&hl"></a>
+</div>
+</section >
+
+<section class="SectionB">
+    <div class="B-S1">
+        <span class="bs1"> Calling all creators </span>
+        <p>Get on SoundCloud to connect with fans, share <br>
+        your sounds, and grow your audience. What are <br>
+        you waiting for?</p>   
+        <a class="btn black" id="find_btn"  href="https://community.soundcloud.com/"> Find out more </a>    
+        </div>
+</section>
+
+<section class="sectionC">
+<div class="C-S1">
+    <div class="cs1">
+        Thanks for listening. Now join in.
+    </div>
+    <p>Save tracks, follow artists and build playlists. All for free.</p>
+    <a id="creat_b" class="btn orange" href="login.html"> Create account</a>
+    <p id="small_p"> Already have an account? </p>
+    <a  class="btn" id="white_btn" href="login.html"> Sign in </a>
+</div>
+</section>
+
+
+
+<footer>
+<div>
+    <a href="https://soundcloud.com/people/directory">Directory</a>
+    -
+    <a href="https://soundcloud.com/pages/contact">About us</a>
+    -
+    <a href="https://community.soundcloud.com/">Creator Resource</a>
+    -
+    <a href="https://blog.soundcloud.com/">Blog</a>
+    -
+    <a href="https://careers.soundcloud.com/">Jobs</a>
+    -
+    <a href="https://developers.soundcloud.com/">Developers</a>
+    -
+    <a href="https://help.soundcloud.com/hc/en-us">Help</a>
+    -
+    <a href="https://soundcloud.com/terms-of-use">Legal</a>
+    -
+    <a href="https://soundcloud.com/pages/privacy">Privacy</a>
+    -
+    <a href="https://soundcloud.com/pages/cookies">Cookie Policy</a>
+    -
+    <a href="#">Consent Manager</a>
+    -
+    <a href="https://soundcloud.com/imprint">Imprint</a>
+    -
+    <a href="https://soundcloud.com/charts/top">Charts</a>
+</div>
+<div class="languageSelect">
+   <span id="languageblue"> Language: </span> <span> English (US) </span> 
+</div>
+<div class="languagemodal">
+</div>
+<!-- <button
+    onclick="window.open('lagnuage.html','window_name','width=430,height=500,location=no,status=no,scrollbars=yes');">
+    <span id="language"> language </span>
+    <span> English (US) </span>
+</button> -->
+  
+<div class="container-audio">
+<button class="icon back"></button>
+<button class="icon play"></button>
+<button class="icon front"></button>
+<button class="icon shuffle"></button>
+<button class="icon rotate"></button>
+
+<audio controls>
+<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg" type="audio/ogg">
+</audio>
+<div id="small-icon"> 
+<button class="icon like"></button>
+<button class="icon plus"></button>
+<button class="icon list"></button>
+</div>
+</div>
+
+
+</footer>
+
+</body>
+</html>
