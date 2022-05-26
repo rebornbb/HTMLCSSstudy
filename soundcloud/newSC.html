@@ -223,39 +223,47 @@ Chromecast, and Xbox One.</p>
 
 <div class="container-audio">
 
+        <button type="button" class="icon back" ></button>
 
+        <button type="button" class="icon play" id="togglebtn" ></button>
 
-<button type="button" class="icon back" ></button>
+        <button type="button" class="icon front"></button>
+        <button type="button" class="icon shuffle"></button>
+        <button type="button" class="icon rotate"></button>
 
-<button type="button" class="icon play" id="togglebtn" ></button>
+            <audio controls>
+            <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg" type="audio/ogg">
+            </audio>
+                        <div> 
+            <button type="button" id="small-icon" class="icon like"></button>
+            <button type="button" id="small-icon" class="icon plus"></button>
 
-<button type="button" class="icon front"></button>
-<button type="button" class="icon shuffle"></button>
-<button type="button" class="icon rotate"></button>
+            <input type="checkbox" class="checkhidden" id="clicklist">
+            <label for="clicklist" > <img src="../img/listicon.png" alt="" id="small-icon"> 
+            </label>
 
-<audio controls>
-<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg" type="audio/ogg">
-</audio>
-<div id="small-icon"> 
-<button type="button" class="icon like"></button>
-<button type="button" class="icon plus"></button>
+    <div class="boxmusic" >     
 
-<input type="checkbox" class="checkhidden" id="clicklist">
-<label for="clicklist" > <img src="../img/listicon.png" alt="" width="30px"> 
-</label>
-<div class="boxmusic" >     
-    <div>
-<span>Next up</span>
-<button>clear</button>
-<button></button>
-    </div>  
-<div>
-    auto
-</div>
-</div>
+            <div >
+            <span class="modal-t-next">Next up</span>
+            <button id="clear-btn">clear</button>
+            <button class="X-btn">✖</button>
+            </div> 
+         
+                <hr id="modal_line">
+    
+            <div class="modal_alignBOTTOM">
+            <span class="modal-t-auto">autoplay station</span> 
+            <span class="modal-t-hear">Hear related tracks base on what's playing now.</span>
+            </div>
 
-
-</div>
+            <label class="switch-button">
+                <input type="checkbox"/>
+                <span class="onoff-switch"></span>
+            </label>
+          
+    </div>
+    
 </div>
 
 </footer>
