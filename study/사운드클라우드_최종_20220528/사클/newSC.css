@@ -1,0 +1,891 @@
+body {
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .bg1 {
+    width: 1240px;
+    height: 450px;
+    border-top: solid 5px #FF5500 ;
+    background-image: url(../img/main01.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 0px;
+    padding-bottom: 50px;
+    box-shadow: inset 0px 50px 32px -1px rgba(0,0,0,0.81);
+    }
+        .bg1 img {
+        position: relative;
+        height: 24px;
+        top: 30px;
+        left: 40px;
+        display: inline-block;
+        }
+        /* 로고 ↑ */
+    
+                .toprignt {
+                display: flex;
+                justify-content: flex-end;
+                }
+                    /* 상단버튼 오른쪽정렬 ↑ */
+    
+    
+                            /* 상단 메인글 ▼*/
+                            .h1 {
+                            font-family : 'HYGothic medium';
+                            text-align: center;
+                            color: #fff;
+                            margin-top: 100px;
+                            margin-bottom: 20px; 
+                            font-weight: 100px;
+                            }
+                            .title_p {
+                            text-align: center;
+                            color: #fff;
+                            font-size: 18px;
+                            }
+    
+    /* button 디자인 ▼ */
+    .btn {
+    text-decoration: none;
+    color: white;
+    padding: 4px 16px;
+    margin: 0 0 0 10px;
+    display:inline-block;
+    border-radius: 4px;
+    transition: all 0.2s;
+    }
+    /* 다수포함 button 값 ↑*/
+    #small_b{
+    font-size: 14px;
+    }
+    #big_b {
+        margin-top: 35px;
+        font: 18px;
+        text-align: center;
+        width: 187px;
+        height: 37px;
+        line-height: 35px;
+        }
+    .btn.black {
+    background-color: black;
+    border: solid white 1px;
+    }
+    .btn.orange {
+    background-color: #FF5500;
+    border: solid transparent 0px;
+    }
+    .btn:active {
+    background-color: blueviolet;
+    }
+    .toprignt a:last-child {
+     position: relative;
+     right:10px
+    }
+    
+    /* [for creator] btn css 위치값*/
+    
+    
+    
+    /* 중단 하얀색 박스영역 ▼*/
+    nav {
+    background-color: white;
+    width: 1240px;
+    height: 860px;
+    margin-top: -40px;
+    }
+    
+    form {
+        padding-left: 15%;
+        padding-top: 20px;
+        }
+    
+        input[type='text'] {
+        background: #f2f2f2;
+        width: 600px;
+        height: 35px;
+        border-radius: 5px;
+        border: solid #f2f2f2 5px;
+        padding-left: 20px;
+        margin-right: 15px;
+        }
+    
+        ::placeholder {
+            color: grey;
+            font-size: 14px;
+            font-family: 굴림;
+            }
+    
+        #search-icon{
+        background-image: url(../img/돋보기.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        width:600px;
+        height: 35px;
+        }
+    
+    .nav-center{
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    /* ↑ Hear what’s trending for free in the SoundCloud community  */
+    
+    /* 앨범 영역 ▼ */
+    
+        .ullist{
+            margin-right:30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-decoration: none;
+        }
+        .lilist{
+            width: 180px;
+            text-decoration: none;
+            list-style: none
+        }
+    
+        .albumlist{
+        width: 180px;
+        display: flex;   
+        flex-direction: column;
+        position: relative;
+        margin-top: -170px;
+        top:150px;
+        }
+    
+        .album-songname{
+            color: black;
+        text-decoration: none;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: normal;
+        padding-top: 10px;
+        }
+        .album-bottomname{
+            color: grey;
+            position: relative;
+            bottom: 10px;
+            text-decoration: none;
+            padding-top: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            word-break: normal;
+        }
+    
+    /* 앨범 이미지 ▼ */
+    
+    #album01 {
+        background-image: url(../img/album01.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album02 {
+        background-image: url(../img/album02.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album03 {
+        background-image: url(../img/album03.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album04 {
+        background-image: url(../img/album04.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album05 {
+        background-image: url(../img/album05.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album06 {
+        background-image: url(../img/album06.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album07 {
+        background-image: url(../img/album07.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album08 {
+        background-image: url(../img/album08.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album09 {
+        background-image: url(../img/album09.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album10 {
+        background-image: url(../img/album10.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album11 {
+        background-image: url(../img/album11.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #album12 {
+        background-image: url(../img/album12.jpg);
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    /* 앨범 hover ▼ */
+                .album{
+                display: inline-block;
+                margin-top: 0;
+                top:200px;
+    
+                z-index: 3;
+                }
+                .album:hover {
+                display: inline-block;
+                margin-top: 0;
+                top:200px;
+    
+                z-index: 0;
+                }
+                #playbutton {
+                margin: 50px;
+                position: relative;
+                background-image: url(../img/playbutton.png);
+                border: none;
+                background-color: transparent;
+                width: 80px;
+                height: 80px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                bottom: 240px;
+    
+                z-index: 1;
+                }
+                #playbutton:hover {
+                margin: 50px;
+                position: inline-block;
+                background-image: url(../img/playbutton-red.png);
+                border: none;
+                background-color: transparent;
+                width: 80px;
+                height: 80px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                bottom: 240px;
+    
+                z-index: 5;
+                }
+                #playbutton:active {
+                    margin: 50px;
+                    position: inline-block;
+                    background-image: url(../img/playbutton-stop.png);
+                    border: none;
+                    background-color: transparent;
+                    width: 80px;
+                    height: 80px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    bottom: 240px;
+        
+                    z-index: 8;
+                    }
+        .align-c {
+            position: relative;
+            left: 500px;
+            top: -70px;
+            }
+        /* nav 마지막 버튼 가운데 정렬↑ */
+    
+        
+    /* 하단 섹션구역A ▼ */
+    .SectionA {
+    width: 1240px;
+    height: 460px;
+    background-color: #f2f2f2;
+    }
+    .A-S1 {
+    width: 730px;
+    height: 460px;
+    background-image: url(../img/phone.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    }
+    /* 1번째 섹션 이미지 ↑ */
+    .as1 {
+    font-size: 36px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    left: 830px;
+    top: 110px;
+    }
+    /* 1번째 섹션 제목 ↑ */
+    #gra_line {
+    width: 70px;
+    height: 3px;
+    background-image: linear-gradient(90deg,#7d01a1,#f30 50%,#f50);
+    margin-top: 140px;
+    position: relative;
+    right: -505px;
+    }
+    /* 1번째 섹션 그라데이션 선↑ */
+    #gra_line ~ p {
+    font-size: 24px;
+    margin-top: 90px;
+    position: relative;
+    left: 835px;
+    margin-top: 25px;
+    }
+    /* 1번째 섹션 글↑ */
+    
+    .btn.imgb1 {
+    width: 120px;
+    height: 40px;
+    background-image: url(../img/appstore.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 820px;
+    }
+    .btn.imgb2 {
+    width: 120px;
+    height: 40px;
+    background-image: url(../img/googleplay.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 810px;
+    top:2px;
+    }
+    
+    
+    /* 하단 섹션구역B ▼ */
+    .SectionB {
+    width: 1240px;
+    height: 460px;
+    background-image: url(../img/main02.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    .bs1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    left: 70px;
+    top: 70px;
+    }
+    .bs1 ~ p {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    left: 70px;
+    top: 70px;
+    }
+    #find_btn {
+    margin-top: 80px;
+    font: 18px;
+    text-align: center;
+    width: 160px;
+    height: 37px;
+    line-height: 35px; 
+    position: relative;
+    left: 60px;
+    }
+    
+    
+    /* 하단 섹션구역C ▼ */
+    .SectionC {
+        width: 1240px;
+        height: 450px;
+        }
+    #white_btn {
+    background-color: fff;
+    border: solid lightgray 1px;
+    color: black;
+    position: relative;
+    top: -55px;
+    left: 375px;
+    }
+    .cs1 {
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    margin-bottom: 20px; 
+    font-weight: 100px;
+    }
+    .cs1 ~ p {
+    text-align: center;
+    position: relative;
+    color: black;
+    font-size: 24px;
+    }
+    #creat_b {
+    font: 18px;
+    text-align: center;
+    width: 187px;
+    height: 37px;
+    line-height: 35px;
+    margin-left: 200px;
+    }
+    #small_p {
+    color: grey;
+    font-size: 15px;
+    padding: 15px;
+    position: relative;
+    left: -50px;
+    }
+    
+    /* footer 구역 ▼ */
+    footer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    }
+    footer div a {
+    font-size: 14px;
+    color : grey;
+    text-decoration: none;
+    }
+    
+    #languageblue {
+    color: blue;
+    }
+    
+    
+    
+    /* 오디오 플레이어 바 ▼ */
+    audio{
+        width: 700px;
+        }
+    .container-audio{
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        padding: 2px;
+        background-color: #f2f2f2;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        }
+    
+    
+    .icon {
+    width: 48px;
+    height: 48px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    }
+    #small-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .icon.play {
+        background-image: url(../img/playicon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+    
+    
+    /* #togglebtn:active {
+        background-image: url(../img/playstopicon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top:5px
+    } */
+    
+    .icon.back {
+    background-image: url(../img/backicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    .icon.front {
+    background-image: url(../img/fronticon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    .icon.shuffle { 
+    background-image: url(../img/shuffleicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    .icon.rotate {
+    background-image: url(../img/rotateicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    .icon.like {
+    background-image: url(../img/likeicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    .icon.plus { 
+    background-image: url(../img/plusicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    /* .icon.list {
+    background-image: url(../img/listicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    } */
+    
+    
+    /* list 모달창 ▼ */
+    .clicklist {
+        background-image: url(../img/listicon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .checkhidden {
+        position: fixed;
+        left:-9999px;
+    }
+    .boxmusic {
+        opacity: 0%;
+        display: none;
+        width: 480px;
+        height: 660px;
+        background: #fff;
+        z-index: 20;
+    }
+    #clicklist:checked ~ .boxmusic {  
+        opacity: 100%;
+        display: inline-block;
+        width: 480px;
+        height: 660px;
+        background: #fff;
+        box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.50);
+        
+        position: absolute;
+        bottom: 65px;
+        left: 760px;
+        z-index: -10;
+    
+        animation-name: anim;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+    }
+    @keyframes anim{
+        0% {bottom: -30px; top: -30px; opacity: 0;}
+        100% {bottom: 65px; top: -660px; opacity: 1;}
+    }
+    
+    /* list 모달창 내용 ▼*/
+    
+    .modal-t-next {
+        display: inline-block;
+        font: #333333;
+        font-size: 16px;
+        font-weight: 100;
+        position: relative;
+        left: 30px;
+        top: 20px;
+    }
+    #clear-btn{
+        width: 50px;
+        height: 25px;
+        display: inline-block;
+        border: 1px solid lightgray;
+        background-color: #fff;   
+        border-radius: 2px;
+        position: relative;
+        left: 300px;
+        top: 20px;
+    }
+    .X-btn {
+        font-size: 18px;
+        border: none;
+        background-color: #fff;
+        position: relative;
+        left: 310px;
+        top: 20px;
+    }
+    
+            #modal_line {
+                position: relative;
+                top: 30px;
+                background-color: lightgray;
+                height: 1px;
+                border: none;
+    
+            }
+    
+    .modal_alignBOTTOM{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+        left: 30px;
+    }
+        .modal-t-auto {
+        font: #333333;
+        font-size: 18px;
+    }
+    .modal-t-hear {
+        display: inline-block;
+        font: red;
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    
+    /* 모달창안에 toggle버튼▼ */
+    
+    
+    .switch-button {
+        position: relative;
+        display: inline-block;
+        width: 55px;
+        height: 30px;
+        left: 395px;
+        top: 10px;
+    }
+    .switch-button input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .onoff-switch {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius:20px;
+        background-color: lightgray;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .onoff-switch:before {
+        position: absolute;
+        content: "";
+        height: 25px;
+        width: 25px;
+        left: 3px;
+        bottom: 3px;
+        background-color: #fff;
+        -webkit-transition: .5s;
+        transition: .4s;
+        border-radius:20px;
+    }
+    .switch-button input:checked + .onoff-switch {
+        background-color: #FF5500;
+    }
+    .switch-button input:checked + .onoff-switch:before {
+        -webkit-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+    /* 5.26 정경섭 추가 작업내용 */
+
+/* 랭귀지 버튼 */
+.languageSelect{height: 20px;}
+.language-box a{text-decoration: none; background: transparent;}
+.language-box2 span{ color:#38d;}
+.language-box3 span{ color:#38d;}
+.lanugage-box>h1{margin-top: 30px;}
+.language-container{display:none; position: relative; bottom: 830px; left: 200px; margin-bottom:-100px;}
+.language-box{width: 550px; height: 388px; background-color: white; }
+.language-box>h1{margin-left: 30px;}
+.language-box1{display: flex; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; margin-bottom: -400px;}
+.language-box2{margin: 20px 50px 20px 30px;}
+.language-box2>div{margin-bottom:10px}
+.language-box3>div{margin-bottom:10px}
+.language-box3{margin: 20px 50px 20px 100px;}
+.cancel-button111{border: none; background: transparent; float: right; margin-top: 50px; margin-right: 30px;}
+.check-button111{position: fixed; left: -9999px;}
+#menuBtn:checked ~ .language-container {display: block;}
+#lan-hover:hover{color: black;}
+#lan-hover{color: #38d;}
+#Check-black{color: black;}
+
+
+/* 사진 우측 하단 버튼 */
+.heart1{
+    background-image: url(../img/likeicon.png);
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.like1{
+    background-image: url(../img/plusicon.png);
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.plus1{
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative; top: 1px; right: 2px;
+}
+
+.Reposter{
+    width: 175.63px; height: 32px;
+    background-color: aliceblue;
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.check-box1{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container{display: none; position: absolute;}
+#plusbtn:checked ~ .button-container {display: block;}
+.button-3{position: relative; right: 95px; top: 130px; z-index: 1; display: inline-block; margin-right: -85px;}
+.button-3:hover{position: relative; right: 95px; top: 130px; z-index: 5;}
+
+.check-box4{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container4{display: none; position: absolute;}
+#plusbtn4:checked ~ .button-container4 {display: block;}
+.button-4{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-4:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+.check-box5{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container5{display: none; position: absolute;}
+#plusbtn5:checked ~ .button-container5 {display: block;}
+.button-5{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-5:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+.check-box6{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container6{display: none; position: absolute;}
+#plusbtn6:checked ~ .button-container6 {display: block;}
+.button-6{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-6:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+.check-box7{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container7{display: none; position: absolute;}
+#plusbtn7:checked ~ .button-container7 {display: block;}
+.button-7{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-7:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+.check-box8{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container8{display: none; position: absolute;}
+#plusbtn8:checked ~ .button-container8 {display: block;}
+.button-8{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-8:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+.check-box9{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container9{display: none; position: absolute;}
+#plusbtn9:checked ~ .button-container9 {display: block;}
+.button-9{position: relative; right: 95px; top: 130px;  z-index: 1;  display: inline-block; margin-right: -85px;}
+.button-9:hover{position: relative; right: 95px; top: 130px;  z-index: 5;}
+
+.check-box10{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container10{display: none; position: absolute;}
+#plusbtn10:checked ~ .button-container10 {display: block;}
+.button-10{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-10:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+.check-box11{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container11{display: none; position: absolute;}
+#plusbtn11:checked ~ .button-container11 {display: block;}
+.button-11{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-11:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+.check-box12{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container12{display: none; position: absolute;}
+#plusbtn12:checked ~ .button-container12 {display: block;}
+.button-12{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-12:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+.check-box13{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container13{display: none; position: absolute;}
+#plusbtn13:checked ~ .button-container13 {display: block;}
+.button-13{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-13:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+.check-box14{position:fixed; left:-999px;}
+.IMG1{position: relative; top: 1px;}
+.button-container14{display: none; position: absolute;}
+#plusbtn14:checked ~ .button-container14 {display: block;}
+.button-14{position: relative; bottom: 270px; left: 100px; z-index: 1;}
+.button-14:hover{position: relative; bottom: 270px; left: 100px;  z-index: 5;}
+
+/* 랭귀지 버튼 */
+.languageSelect{height: 20px;}
+.language-box a{text-decoration: none; background: transparent;}
+.language-box2 span{ color:#38d;}
+.language-box3 span{ color:#38d;}
+.lanugage-box>h1{margin-top: 30px;}
+.language-container{display:none; position: relative; bottom: 830px; left: 200px; margin-bottom:-100px;}
+.language-box{width: 550px; height: 388px; background-color: white; }
+.language-box>h1{margin-left: 30px;}
+.language-box1{display: flex; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; margin-bottom: -400px;}
+.language-box2{margin: 20px 50px 20px 30px;}
+.language-box2>div{margin-bottom:10px}
+.language-box3>div{margin-bottom:10px}
+.language-box3{margin: 20px 50px 20px 100px;}
+.cancel-button111{border: none; background: transparent; position: relative; }
+.check-button111{position: fixed; left: -9999px;}
+#menuBtn:checked ~ .language-container {display: block;}
+#lan-hover:hover{color: black;}
+#lan-hover{color: #38d;}
+#Check-black{color: black;}
